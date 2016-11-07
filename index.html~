@@ -139,6 +139,36 @@
        </ul> 
       </ul></td> 
     </tr> 
+
+ <tr> 
+     <td><b>Hardware Certification Program on Inspur NF5280M4/ Huawei 1288 for HOS3.0
+ </b></td> 
+     <td align="right">HPE</td> 
+    </tr> 
+    <tr> 
+     <td><b>Project Manager/TTT</b></td> 
+     <td align="right">2016/5</td> 
+    </tr> 
+    <tr> 
+     <td> 
+      <ul> 
+       <li>Project description</li> 
+       <ul> 
+        <li>help to certify specified hardware and make sure it will be listed on helionready website</li> 
+       </ul> 
+       <li>Related Skills/Technology</li> 
+       <ul> 
+        <li>HOS/Netperf/Fio/Performance/Tempest/LTP/Testing</li> 
+       </ul> 
+       <li>My Responsibility</li> 
+       <ul> 
+        <li>Write Hardware Certification process guide  </li> 
+        <li>Setup HOS environment</li> 
+        <li> Guide Team memebers to run related tests for hardware certification</li> 
+        <li> Guide Team memebers to run related tests for hardware certification</li> 
+       </ul> 
+      </ul></td> 
+    </tr> 
     <tr> 
      <td><b>WeiDong Edu Cloud- HOS+Huawei AC SDN + F5 Loadbalance</b></td> 
      <td align="right">HPE</td> 
