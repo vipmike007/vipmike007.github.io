@@ -170,6 +170,118 @@
        </ul> 
       </ul></td> 
     </tr> 
+    <tr> 
+     <td><b>Guang He Smart Cloud deliery </b></td> 
+     <td align="right">HPE</td> 
+    </tr> 
+    <tr> 
+     <td><b>Project Manager/TTT</b></td> 
+     <td align="right">2016/1-2016/2</td> 
+    </tr> 
+    <tr> 
+     <td> 
+      <ul> 
+       <li>Project description</li> 
+       <ul> 
+        <li>Delivery Distributed Cloud to customer</li> 
+       </ul> 
+       <li>Related Skills/Technology</li> 
+       <ul> 
+        <li>HOS/Triple-O/CloudSystem/CSA/</li> 
+       </ul> 
+       <li>My Responsibility</li> 
+       <ul> 
+        <li>Check vendor's environment preparation </li> 
+        <li>Delivery HOS1.1.1 to ZHANGJIAKOU Site</li> 
+        <li>Create topology design in CS8 and intergrated w/ HOS on CloudSystem8 located GUOKE</li> 
+        <li>Environment operation and issues fixing</li> 
+        <li>Onsite to Guang'He to give customer 2-day trainning about CloudSystem and Helion Openstack.</li> 
+        <li>PM management and create the checkpoint and customer facing</li> 
+       </ul> 
+      </ul></td> 
+    </tr> 
+    <tr> 
+     <td><b>CDV POC Demo For HPE CloudSystem9.1</b></td> 
+     <td align="right">HPE</td> 
+    </tr> 
+    <tr> 
+     <td><b>Project Member/TTT</b></td> 
+     <td align="right">2015/12</td> 
+    </tr> 
+    <tr> 
+     <td> 
+      <ul> 
+       <li>Project description</li> 
+       <ul> 
+        <li>help Delivery Cloud System and Vsphere 6.0 to customer</li> 
+       </ul> 
+       <li>Related Skills/Technology</li> 
+       <ul> 
+        <li>HOS/Triple-O/CloudSystem/CSA/</li> 
+       </ul> 
+       <li>My Responsibility</li> 
+       <ul> 
+        <li> Delivery Cloud System on CDV's Server</li> 
+        <li>Add existing vsphere 5.5 on the cloud system </li> 
+        <li>Create topology design in CSA (which is bundled in Cloudsystem 4.5) in order to create VM on vsphere4.5 from HPE MPP portal.</li> 
+        <li>on site technical trainning for customers</li> 
+       </ul> 
+      </ul></td> 
+    </tr> 
+    <tr> 
+     <td><b>Virtio-Win Team Project Lead</b></td> 
+     <td align="right">Red Hat</td> 
+    </tr> 
+    <tr> 
+     <td><b>Technical Lead,Team Lead</b></td> 
+     <td align="right">2011/7-2015/11</td> 
+    </tr> 
+    <tr> 
+     <td> 
+      <ul> 
+       <li>Project description</li> 
+       <ul> 
+        <li>behaved as technical lead for virtio-win WHQL&amp;SVVP team in RHEL6.2,6.3,6.4,6.5,5.9,5.10,7.0,7.1</li> 
+       </ul> 
+       <li>Related Skills/Technology</li> 
+       <ul> 
+        <li>Hardware Certification/HCK/WLK/powershell/People management/python</li> 
+       </ul> 
+       <li>My Responsibility</li> 
+       <ul> 
+        <li>execution</li> 
+        <ul> 
+         <li>Be familiar with all the project features;review the technical paper for each feature and give the feedback to improve quality of feature research(more test scenarios,optimized format,etc)</li> 
+         <li>Assign/track/review the project tasks and deliver accurate and timely test results</li> 
+         <li>Analysis&amp;debug problems and issues that raised by project members and give the correct/effective solutions in time</li> 
+         <li>Be accountable for project bug tracking including bug acking, reviewing and raise correct flags/keyword, organize and involve in bug go through weekly/biweekly</li> 
+         <li>Be accountable prioritize the testing for parallel streams and give executable solutions to all unexpected issues for the project</li> 
+         <li>Be accountable for errata handling for each release Communicate with Developer and Microsoft in time in case PV drivers could get MSFT Logo</li> 
+         <li>Tech-Talk about WHQL/HCK/virtio-win</li> 
+         <li>HCK whql autommation work - powershell</li> 
+         <li>Run manual functional tests according to requirements</li> 
+        </ul> 
+        <li>Planning</li> 
+        <ul> 
+         <li>Be accountable for preparing the test plan/goal of project, including define the risks, capacity, deliverables in each phase/milestone and carry out proper solutions to evade/diminish risks</li> 
+         <li>Lead/maintain the regular project discussion session with senior QE, review the technical part and give the feedback to project members organize regular project meeting.</li> 
+         <li>Be accountable for improving the bug contribution and bug quality for the project</li> 
+         <li>Be accountable to rich/maintain project documentation(new hire guide/quick start, FAQ,etc) and make them update to date</li> 
+         <li>Be accountable to consider the project requirements (recruitment/hardware/training), forecast capacity risks and give the report in time.</li> 
+         <li>Bug ACK</li> 
+        </ul> 
+        <li>Management</li> 
+        <ul> 
+         <li>Be familiar with project members' ability/strength/weakness and let them play in proper roles</li> 
+         <li>review/track project members performance &amp; feedback (for new hire, give evaluation every month) and feedback them to section lead in time</li> 
+         <li>Build good communication with devels/outside(got sign-off in time, no blame from outside), give quick response for the outside concern Some interview work</li> 
+         <li>Familiar/Review/Optimize all project related work flow, and make sure all project members can follow them during daily work.</li> 
+         <li>Presentation on team/product introduction to developer manager</li> 
+         <li>1:1 meeting with team members every month</li> 
+        </ul> 
+       </ul> 
+      </ul></td> 
+    </tr> 
    </tbody> 
   </table> 
   <h3>EDUCATION</h3> 
