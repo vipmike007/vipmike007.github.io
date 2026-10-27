@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: 'en' }}">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+  {% capture title_en %}{% if page.title %}{{ page.title }} · {% endif %}{{ site.title }}{% endcapture %}
+  {% capture title_zh %}{% if page.title_zh %}{{ page.title_zh }}{% elsif page.title %}{{ page.title }}{% endif %}{% if page.title %} · {% endif %}曹博凯{% endcapture %}
+  {% include lang-head.html title_en=title_en title_zh=title_zh %}
+  <meta name="description" content="{{ page.description | default: page.excerpt | default: site.description | strip_html | strip_newlines | truncate: 160 }}" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}" />
+  {% feed_meta %}
+</head>
+<body>
+
+  <nav id="nav">
+    <div class="container">
+      <a class="brand" href="/"><span class="dot">MC</span><span class="en">Mike Cao</span><span class="zh">曹博凯</span></a>
+      <div class="nav-right">
+        <ul>
+          <li><a href="/#about"><span class="en">About</span><span class="zh">关于</span></a></li>
+          <li><a href="/#experience"><span class="en">Experience</span><span class="zh">经历</span></a></li>
+          <li><a href="/#projects"><span class="en">Projects</span><span class="zh">项目</span></a></li>
+          <li><a href="/#skills"><span class="en">Skills</span><span class="zh">技能</span></a></li>
+          <li><a href="/#education"><span class="en">Education</span><span class="zh">教育</span></a></li>
+          <li><a href="/blog/" class="active"><span class="en">Blog</span><span class="zh">博客</span></a></li>
+          <li><a href="/#contact"><span class="en">Contact</span><span class="zh">联系</span></a></li>
+        </ul>
+        {% include lang-switch.html %}
+      </div>
+    </div>
+  </nav>
+
+  {{ content }}
+
+  <footer>
+    © <span id="year"></span> <span class="en">Mike Cao</span><span class="zh">曹博凯</span> · <a href="/feed.xml">RSS</a> · <span class="en">Hosted on GitHub Pages</span><span class="zh">托管于 GitHub Pages</span>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top">
+    <svg class="i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+  </button>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    const nav = document.getElementById('nav');
+    const toTop = document.getElementById('toTop');
+    const onScroll = () => {
+      nav.classList.toggle('scrolled', window.scrollY > 40);
+      toTop.classList.toggle('show', window.scrollY > 600);
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+    toTop.addEventListener('click', () => window.scrollTo({ top: 0 }));
+
+    let pending = [...document.querySelectorAll('.reveal')];
+    const reveal = () => {
+      const limit = window.innerHeight * 0.92;
+      pending = pending.filter(el => {
+        if (el.getBoundingClientRect().top < limit) { el.classList.add('in'); return false; }
+        return true;
+      });
+    };
+    ['scroll', 'resize', 'load'].forEach(ev => window.addEventListener(ev, reveal, { passive: true }));
+    reveal();
+  </script>
+</body>
+</html>

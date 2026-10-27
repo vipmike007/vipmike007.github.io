@@ -1,0 +1,38 @@
+---
+layout: base
+---
+{% assign words = content | strip_html | size | divided_by: 5 %}
+{% assign minutes = words | divided_by: 200 | plus: 1 %}
+<header class="hero page-hero">
+  <div class="blob b1"></div><div class="blob b2"></div>
+  <div class="container narrow">
+    <a class="back-link" href="/blog/"><span class="en">← All posts</span><span class="zh">← 全部文章</span></a>
+    <h1><span class="en">{{ page.title }}</span><span class="zh">{{ page.title_zh | default: page.title }}</span></h1>
+    <p class="post-meta">
+      <span class="en">{{ page.date | date: "%B %-d, %Y" }} · {{ minutes }} min read</span>
+      <span class="zh">{{ page.date | date: "%Y年%-m月%-d日" }} · 约 {{ minutes }} 分钟阅读</span>
+    </p>
+    {% if page.tags.size > 0 %}
+    <div class="tags">{% for tag in page.tags %}<span class="tag tag-dark">{{ tag }}</span>{% endfor %}</div>
+    {% endif %}
+  </div>
+</header>
+
+<main>
+  <section class="post-section">
+    <div class="container narrow">
+      <article class="card prose">
+        {{ content }}
+      </article>
+
+      <div class="post-nav">
+        {% if page.previous %}
+        <a class="card hover" href="{{ page.previous.url | relative_url }}"><span><span class="en">← Previous</span><span class="zh">← 上一篇</span></span><b><span class="en">{{ page.previous.title }}</span><span class="zh">{{ page.previous.title_zh | default: page.previous.title }}</span></b></a>
+        {% else %}<span></span>{% endif %}
+        {% if page.next %}
+        <a class="card hover next" href="{{ page.next.url | relative_url }}"><span><span class="en">Next →</span><span class="zh">下一篇 →</span></span><b><span class="en">{{ page.next.title }}</span><span class="zh">{{ page.next.title_zh | default: page.next.title }}</span></b></a>
+        {% endif %}
+      </div>
+    </div>
+  </section>
+</main>

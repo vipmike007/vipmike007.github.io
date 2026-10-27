@@ -1,0 +1,16 @@
+<script>
+  // Pick the language before first paint: ?lang= → saved choice → browser language.
+  (function () {
+    var q = new URLSearchParams(location.search).get('lang');
+    var saved = null;
+    try { saved = localStorage.getItem('lang'); } catch (e) {}
+    var lang = q || saved || ((navigator.language || '').toLowerCase().indexOf('zh') === 0 ? 'zh' : 'en');
+    if (lang !== 'zh') lang = 'en';
+    var root = document.documentElement;
+    root.dataset.lang = lang;
+    root.lang = lang === 'zh' ? 'zh-CN' : 'en';
+    root.classList.add('js');
+    window.PAGE_TITLES = { en: {{ include.title_en | jsonify }}, zh: {{ include.title_zh | default: include.title_en | jsonify }} };
+    document.title = window.PAGE_TITLES[lang];
+  })();
+</script>

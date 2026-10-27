@@ -1,0 +1,12 @@
+{% assign p = include.post %}
+{% assign summary_en = p.description | default: p.excerpt | strip_html | strip_newlines | truncate: 150 %}
+{% assign summary_zh = p.description_zh | default: summary_en | strip_html | strip_newlines | truncate: 90 %}
+<a class="card hover post-card reveal" href="{{ p.url | relative_url }}">
+  <span class="post-date"><span class="en">{{ p.date | date: "%b %-d, %Y" }}</span><span class="zh">{{ p.date | date: "%Y年%-m月%-d日" }}</span></span>
+  <h3><span class="en">{{ p.title }}</span><span class="zh">{{ p.title_zh | default: p.title }}</span></h3>
+  <p><span class="en">{{ summary_en }}</span><span class="zh">{{ summary_zh }}</span></p>
+  {% if p.tags.size > 0 %}
+  <div class="tags">{% for tag in p.tags limit:3 %}<span class="tag">{{ tag }}</span>{% endfor %}</div>
+  {% endif %}
+  <span class="read-more"><span class="en">Read post →</span><span class="zh">阅读全文 →</span></span>
+</a>
