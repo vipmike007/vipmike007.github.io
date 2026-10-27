@@ -185,6 +185,11 @@ section.alt { background: var(--bg-alt); }
 .focus h3 { margin: 0 0 6px; font-size: 16px; }
 .focus p { margin: 0; color: var(--muted); font-size: 14px; }
 .focus { padding: 22px; }
+.focus.featured {
+  grid-column: 1 / -1;
+  border-color: color-mix(in srgb, var(--accent) 35%, var(--border));
+  background: linear-gradient(135deg, var(--accent-soft), transparent 70%), var(--surface);
+}
 
 /* Timeline */
 .timeline { position: relative; padding-left: 76px; }

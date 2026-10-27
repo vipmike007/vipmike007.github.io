@@ -14,7 +14,8 @@ Account Manager — I've decided it's time to start writing things down.
 
 ## What I'll write about
 
-- **Cloud & virtualization** — OpenShift, OpenStack, KVM, and RHEL in real customer environments
+- **Operating systems, especially RHEL** — running, tuning, and troubleshooting Red Hat Enterprise Linux in real customer environments
+- **Cloud & virtualization** — OpenShift, OpenStack, and KVM
 - **Customer success** — what I've learned about being a trusted technical advisor
 - **Engineering management** — ideas from my MEM studies and from leading teams
 
@@ -34,7 +35,8 @@ Thanks for stopping by — feel free to [reach out](/#contact) anytime.
 
 ## 我会写些什么
 
-- **云计算与虚拟化**——OpenShift、OpenStack、KVM 和 RHEL 在真实客户环境中的实践
+- **操作系统，尤其是 RHEL**——红帽企业 Linux 在真实客户环境中的运行、调优与故障排查
+- **云计算与虚拟化**——OpenShift、OpenStack 与 KVM
 - **客户成功**——如何成为客户信赖的技术顾问
 - **工程管理**——来自 MEM 学习和团队管理的思考
 
